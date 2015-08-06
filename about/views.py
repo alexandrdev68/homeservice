@@ -4,7 +4,7 @@ from django.template import RequestContext, loader
 
 # Create your views here.
 def index(request):
-    output = "Hello, world. You're at the aboutpage."
+    output = {'text':"Hello, world. You're at the aboutpage."}
     template = loader.get_template('about/index.html')
     return HttpResponse(template.render(output))
 
