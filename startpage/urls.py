@@ -2,8 +2,8 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 
 
-from . import views
+from startpage.views import Index
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', Index.as_view(), name='index'),
 ]
