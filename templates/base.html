@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container top">
+			<div class="col-sm-12">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="/about">About</a></li>
+					<li role="presentation"><a href="/admin">Admin</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Library</a></li>
+					<li class="active">Data</li>
+				</ol>
+			</div>
+		</div>
+		<div class="container">
+			{% block content %}{% endblock %}
+		</div>
+		<div class="container bottom">
+		
+		</div>
+		<script src="{% static 'libs/jquery-1.11.3.min.js' %}"></script>
+		<script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'javascript/main.js' %}"></script>
+	</body>
+</html>
