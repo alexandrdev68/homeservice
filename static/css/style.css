@@ -2,8 +2,19 @@ h1{
 	color:#f00;
 }
 body{
-	background: linear-gradient(145deg, #0f688f 0%, #061c26 100%) no-repeat;
+	/*background: linear-gradient(145deg, #0f688f 0%, #061c26 100%) no-repeat;*/
+	background:  linear-gradient(180deg, #ffffff 0%, #b2b2b2 100%) no-repeat;
 }
-.hsMenu li.active{
+div.container.main_content{
+	min-height:400px;
+}
+div.container{
+	
+}
+ul.hsMenu li.active > a:hover, li.active a{
 	background: linear-gradient(145deg, #3e3e3e 0%, #070707 100%);
+	color:#fff;
+}
+ul.hsMenu li a{
+	color:#000;
 }

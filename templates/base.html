@@ -7,9 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-		<div class="container top">
+		<div class="container top col-md-12">
 			<div class="col-md-12"></div>
-			<div class="col-md-12">
+			<div class="col-md-8 col-md-offset-2">
 				<ul class="nav nav-pills nav-justified hsMenu">
 					<li role="presentation" class="active"><a href="/">Home</a></li>
 					<li role="presentation"><a href="/about">About</a></li>
@@ -22,11 +22,11 @@
 				
 			</div>
 		</div>
-		<div class="container">
+		<div class="container main_content">
 			{% block content %}{% endblock %}
 		</div>
 		<div class="container bottom">
-		
+			<div class="col-md-8 col-md-offset-2 text-center"><small>Powered by Django 2015</small></div>
 		</div>
 		<script src="{% static 'libs/jquery-1.11.3.min.js' %}"></script>
 		<script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
