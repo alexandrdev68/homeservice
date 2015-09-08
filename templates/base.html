@@ -8,19 +8,18 @@
 	</head>
 	<body>
 		<div class="container top">
-			<div class="col-sm-12">
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
+			<div class="col-md-12"></div>
+			<div class="col-md-12">
+				<ul class="nav nav-pills nav-justified hsMenu">
+					<li role="presentation" class="active"><a href="/">Home</a></li>
 					<li role="presentation"><a href="/about">About</a></li>
 					<li role="presentation"><a href="/admin">Admin</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-12">
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Library</a></li>
-					<li class="active">Data</li>
-				</ol>
+			<div class="col-md-12">
+				
+					{% block breadcrumb %}{% endblock %}
+				
 			</div>
 		</div>
 		<div class="container">

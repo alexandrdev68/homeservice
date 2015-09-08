@@ -1,3 +1,9 @@
 h1{
 	color:#f00;
 }
+body{
+	background: linear-gradient(145deg, #0f688f 0%, #061c26 100%) no-repeat;
+}
+.hsMenu li.active{
+	background: linear-gradient(145deg, #3e3e3e 0%, #070707 100%);
+}
