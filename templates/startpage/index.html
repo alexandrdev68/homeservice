@@ -4,4 +4,22 @@
 {% endblock %}
 {% block content %}
 <h1>{{text}}</h1>
+ <form class="w3-container">
+  <div class="w3-group">
+    <input class="w3-input" type="text" required>
+    <label class="w3-label">Name</label>
+  </div>
+  <div class="w3-group">
+    <input class="w3-input" type="text" required>
+    <label class="w3-label">Email</label>
+  </div>
+   <label class="w3-checkbox">
+    <input type="checkbox" checked="checked">
+    <div class="w3-checkmark"></div> Milk
+  </label><br>
+  <label class="w3-checkbox">
+    <input type="checkbox">
+    <div class="w3-checkmark"></div> Sugar
+  </label><br>
+</form>
 {% endblock %}

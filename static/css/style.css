@@ -21,3 +21,7 @@ ul.hsMenu li.active > a:hover, li.active a{
 ul.hsMenu li a{
 	color:#000;
 }
+
+.w3-input, .w3-textarea{
+	box-shadow:0 0 0;
+}
