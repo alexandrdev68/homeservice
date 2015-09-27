@@ -25,3 +25,7 @@ ul.hsMenu li a{
 .w3-input, .w3-textarea{
 	box-shadow:0 0 0;
 }
+
+.no-border{
+	border:none;
+}
