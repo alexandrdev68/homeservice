@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'startpage',
     'about',
+    'omnibus',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -69,6 +70,10 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'omnibus.context_processors.omnibus',
+)
 
 WSGI_APPLICATION = 'homeservice.wsgi.application'
 
