@@ -3,6 +3,8 @@
 
 {% endblock %}
 {% block content %}
+
+
 <h1>{{text}}</h1>
  <form class="w3-container">
   <div class="w3-group">
@@ -22,4 +24,8 @@
     <div class="w3-checkmark"></div> Sugar
   </label><br>
 </form>
+{% endblock %}
+{% load staticfiles %}
+{% block extrascripts %}
+<script src="{% static 'javascript/startpage.js' %}"></script>
 {% endblock %}
