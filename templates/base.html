@@ -25,11 +25,28 @@
 				            <li><a href="#"><small>Ukr</small></a></li>
 				          </ul>
 				        </li>
-				        <li><a href="#"><small>sign in </small><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+				        <li class="_signin"><a href="#"><small>sign in </small><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
 				    </ul>
 				  </div>
 				</nav>
 			</div>
+			<!-- Small modal -->
+			<div class="modal fade bs-example-modal-sm _signin_wnd" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			  <div class="modal-dialog modal-sm">
+			    <div class="modal-content">
+					<form class="w3-container">
+					  <div class="w3-group">
+					    <input class="w3-input" type="text" required>
+					    <label class="w3-label">Login/Email</label>
+					  </div>
+					  <div class="w3-group">
+					    <input class="w3-input" type="text" required>
+					    <label class="w3-label">Password</label>
+					  </div>
+					</form>
+			    </div>
+			  </div>
+			</div><!-- signin modal window -->
 			<div class="col-md-8 col-md-offset-2">
 				<ul class="nav nav-pills nav-justified hsMenu">
 					<li role="presentation" class="active"><a href="/">Home</a></li>
@@ -52,6 +69,7 @@
 		<script src="{% static 'libs/jquery-1.11.3.min.js' %}"></script>
 		<script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
 		<script src="{% static 'javascript/main.js' %}"></script>
+		<script src="{% static 'javascript/for_all_pages.js' %}"></script>
 		{% block extrascripts %}{% endblock %}
 	</body>
 </html>
