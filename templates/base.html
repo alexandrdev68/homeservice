@@ -30,23 +30,29 @@
 				  </div>
 				</nav>
 			</div>
+			{% block signin_window %}
 			<!-- Small modal -->
 			<div class="modal fade bs-example-modal-sm _signin_wnd" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
 			  <div class="modal-dialog modal-sm">
 			    <div class="modal-content">
 					<form class="w3-container">
 					  <div class="w3-group">
-					    <input class="w3-input" type="text" required>
+					    <input class="w3-input" type="text" name="login" required>
 					    <label class="w3-label">Login/Email</label>
 					  </div>
 					  <div class="w3-group">
-					    <input class="w3-input" type="text" required>
+					    <input class="w3-input" type="text" name="password" required>
 					    <label class="w3-label">Password</label>
+					  </div>
+					  <button type="button" class="btn btn-link">You are didn't register?</button>
+					  <div class="modal-footer">
+					  	<button class="w3-btn" type="submit">Sign in</button>
 					  </div>
 					</form>
 			    </div>
 			  </div>
 			</div><!-- signin modal window -->
+			{% endblock %}
 			<div class="col-md-8 col-md-offset-2">
 				<ul class="nav nav-pills nav-justified hsMenu">
 					<li role="presentation" class="active"><a href="/">Home</a></li>
